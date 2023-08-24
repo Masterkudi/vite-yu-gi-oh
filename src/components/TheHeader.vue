@@ -7,11 +7,22 @@ export default {
 
 <template>
     <header>
-        <img src="https://www.nicepng.com/png/detail/71-713842_transparent-yugioh-logo-yu-gi-oh-the-art.png" alt="Transparent Yugioh Logo - Yu-gi-oh! The Art Of The Cards@nicepng.com">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae iste maiores deleniti asperiores id ut obcaecati necessitatibus. Sequi consequuntur nihil illum cumque assumenda, aperiam at veniam sint ipsam illo?
+        <div class="title d-flex justify-content-flex-start text-center p-3 ">
+            <img src="../assets/img/Yu-Gi-Oh!_(Logo).jpg" alt="">
+            <h1>Yu-Gi-Oh Api</h1>
+        </div>
     </header>
 </template>
 
 <style scoped lang="scss">
 
+.title img {
+    height: 1rem;
+    align-self: center;
+}
+.title h1 {
+    padding-left: 2rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
 </style>
