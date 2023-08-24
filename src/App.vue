@@ -1,7 +1,7 @@
 <script>
 import TheHeader from "./components/TheHeader.vue";
 import TheFooter from "./components/TheFooter.vue";
-import MosterCards from "./components/MonsterCards.vue";
+import MosterCards from "./components/monsterCards.vue";
 
 export default {
   components: {

@@ -20,13 +20,22 @@ export default {
         this.fetchMonsters();
     },
 };
-
 </script>
 
 <template>
-
+    <div class="row row-cols-5">
+        <div class="col" v-for="monster in monsters" :key="monster.id">
+            <div class="card">
+                <img src="monster.image_url" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ monster.name }}</h5>
+                    <p class="card-text">
+                        {{ monster.archetype }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
