@@ -1,37 +1,37 @@
 <script>
 import TheHeader from "./components/TheHeader.vue";
 import TheFooter from "./components/TheFooter.vue";
-import MosterCards from "./components/monsterCards.vue";
+import Cards from "./components/Cards.vue";
 
 export default {
   components: {
     TheHeader,
-    TheFooter
+    TheFooter,
+    Cards
   }
 }
 </script>
 
 <template>
-
   <TheHeader></TheHeader>
 
-  <main>
-    <div class="card-container">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae, velit itaque aliquid quisquam quidem quos nostrum mollitia blanditiis asperiores atque corrupti, voluptatum voluptatem, laudantium ea amet libero similique architecto.
+  <main class="main p-4">
+    <div class="card-container p-4">
+      
 
-      <MonsterCards></MonsterCards>
+      <Cards></Cards>
     </div>
   </main>
 
   <TheFooter></TheFooter>
-
 </template>
 
 <style lang="scss">
-  main {
-    background-color: #D48F38;
-  }
-  .card-container {
-    background-color: #fff;
-  }
+.main {
+  background-color: #D48F38;
+}
+
+.card-container {
+  background-color: #fff;
+}
 </style>
