@@ -15,7 +15,7 @@ export default {
 <template>
   <TheHeader></TheHeader>
 
-  <main class="main p-4">
+  <main class="main d-flex p-4">
     <div class="card-container p-4">
       
 

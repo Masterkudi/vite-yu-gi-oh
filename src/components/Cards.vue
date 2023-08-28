@@ -13,6 +13,7 @@ export default {
 
             axios.get(url).then((response) => {
                 this.monsters = response.data.data;
+                console.log(this.monsters)
         });
         },
     },
@@ -30,7 +31,7 @@ export default {
        
         <div class="col" v-for="monster in monsters" :key="monster.id">
             <div class="card rounded-0">
-                <img :src="monster.image_url" class="card-img-top" alt="...">
+                <img :src="monster.card_images[0].image_url" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ monster.name }}</h5>
                     <p class="card-text">
@@ -50,11 +51,19 @@ export default {
 }
 .card-title {
     color: #fff;
+    font-size: .8rem;
+}
+.card-text {
+    font-size: .6rem;
 }
 .col {
     padding-left: .5rem;
     padding-right: .5rem;
     padding-bottom: .5rem;
+}
+
+.card-img-top {
+    width: 50%;
 }
 
 </style>
