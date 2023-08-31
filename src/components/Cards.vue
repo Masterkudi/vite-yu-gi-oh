@@ -45,17 +45,26 @@ export default {
 
 <style scoped lang="scss">
 
-.card {
+.row.row-cols-5 {
+    min-height: 100vh;
     background-color: #D48F38;
+    padding: 2rem;
+}
+.card {
     height: 200px;
 }
+
 .card-title {
+    padding: .5rem;
+    text-align: center;
     color: #fff;
     font-size: .8rem;
 }
+
 .card-text {
     font-size: .6rem;
 }
+
 .col {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -63,7 +72,7 @@ export default {
 }
 
 .card-img-top {
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
-
 </style>
